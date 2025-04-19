@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logo 4.jpg" type="image/x-icon">
+    <title>Liên Hệ</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/hiệu ứng.css">
+</head>
+<body>
+    <div class="top-header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo 4.jpg" alt="Logo">
+            </a>   
+            <a href="../index.html">
+                <span>Airsoft</span>
+            </a>
+        </div>
+        <div class="hotline">
+            <i class="fas fa-headset"></i>&#128222;<!--Cái điện thoại--> HOTLINE: <span class="red">0763627348</span>
+        </div>
+        <div class="store">
+            <i class="fas fa-map-marker-alt"></i> HỆ THỐNG CỬA HÀNG
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm sản phẩm...">&#128269;<!-- Kính lúp tìm kiếm -->
+        </div>
+        <div class="user-icons">
+            <div><i class="fas fa-user"></i>&#128100;<!-- Hình người đăng nhập--><a href="Đăng nhập.html">ĐĂNG NHẬP</a></div>
+            <div><i class="fas fa-shopping-cart"></i>&#128722;<!--Biểu tượng giỏ hàng--> <a href="#">Giỏ hàng</a><span class="cart-count">0</span></div>
+        </div>
+    </div>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><div class="dropdown">
+                <a href="#">Sản phẩm ▾</a>
+                <div class="dropdown-content">
+                  <a href="../danh mục từng loại súng/Súng ngắn.html">HANDGUN: Súng Ngắn</a>
+                  <a href="../danh mục từng loại súng/súng trường.html">Rifle: Súng trường</a>
+                  <a href="../danh mục từng loại súng/súng tiểu liên.html">SMG: Súng tiểu liên</a>
+                  <a href="../danh mục từng loại súng/súng ngắm.html">SNIPER: Súng Bắn Tia</a>
+            </li>
+            <li><a href="Dịch Vụ.html">Dịch Vụ</a></li>
+            <li><a href="Giới thiệu.html">Giới thiệu về Airsoft</a></li>
+            <li><a href="Liên Hệ.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Liên Hệ Chúng Tôi</h2>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Họ và Tên:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Tin nhắn:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2025 Trang Chủ. Bảo lưu mọi quyền.<br>
+        ĐC : Số 8, Đường Trần Văn Ơn, Phường Phú Hòa, Thành Phố Thủ Dầu Một<br>
+        Email : lyhoanghung206@gmail.com
+    </footer>
+</body>
+</html>

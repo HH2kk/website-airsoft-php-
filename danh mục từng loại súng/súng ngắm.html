@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logo 4.jpg" type="image/x-icon">
+    <title>Danh sách sản phẩm</title>
+    <style>
+        section {
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: left;
+        }
+        section a {
+            text-decoration: none;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .product {
+            width: 23%;
+            border: 1px solid #ddd;
+            background : white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .product p {
+            color: blue;
+            font-weight: bold;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+        .buy-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #0073e6;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .buy-btn:hover {
+            background: #005bb5;
+        }
+        .button-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: green;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .button-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/hiệu ứng.css">
+</head>
+<body>
+    <!-- menu đầu tiên của trang  -->
+    <div class="top-header">
+        <div class="logo">  
+            <a href="../index.html">
+                <img src="../images/logo 4.jpg" alt="Logo">
+            </a>  
+            <a href="../index.html">
+                <span>Airsoft</span>
+            </a>
+        </div>
+        <div class="hotline">
+            <i class="fas fa-headset"></i>&#128222;<!--Cái điện thoại--> HOTLINE: <span class="red">0763627348</span>
+        </div>
+        <div class="store">
+           HỆ THỐNG CỬA HÀNG
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm sản phẩm...">&#128269;<!-- Kính lúp tìm kiếm -->
+        </div>
+        <div class="user-icons">
+            <div><i class="fas fa-user"></i>&#128100;<!-- Hình người đăng nhập--><a href="Đăng nhập.html">ĐĂNG NHẬP</a></div>
+            <div><i class="fas fa-shopping-cart"></i>&#128722;<!--Biểu tượng giỏ hàng--> <a href="#">Giỏ hàng</a><span class="cart-count">0</span></div>
+        </div>
+    </div>
+    <!-- menu chính của trang  -->
+    <nav class="main-menu">
+        <ul>
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><div class="dropdown">
+                <a href="#">Sản phẩm ▾</a>
+                <div class="dropdown-content">
+                  <a href="../danh mục từng loại súng/Súng ngắn.html">HANDGUN: Súng Ngắn</a>
+                  <a href="../danh mục từng loại súng/súng trường.html">Rifle: Súng trường</a>
+                  <a href="../danh mục từng loại súng/súng tiểu liên.html">SMG: Súng tiểu liên</a>
+                  <a href="../danh mục từng loại súng/súng ngắm.html">SNIPER: Súng Bắn Tia</a>
+            </li>
+            <li><a href="../html/Dịch Vụ.html">Dịch Vụ</a></li>
+            <li><a href="../html/Giới thiệu.html">Giới thiệu về Airsoft</a></li>
+            <li><a href="../html/Liên Hệ.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <section>
+        <!-- các sản phẩm của cửa hàng -->
+        <h2>Danh mục súng ngắm ( Sniper )</h2>
+        <div class="product-container">
+            <a href="../thuộc tính súng html/SVD DRAGUNOV AEG.html">
+                <div class="product">
+                    <img src="../images/A&K SVD DRAGUNOV AEG 18tr5.jpg" alt="A&K SVD DRAGUNOV AEG">
+                    <h3>A&K SVD DRAGUNOV AEG</h3>
+                    <p>giá:18.800.000 VNĐ</p>
+                    <a href="#" class="buy-btn">Mua ngay</a>
+                    <a href="#" class="button-btn">thêm vào giỏ hàng</a>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="../images/ARES MSR010 MS338 38tr.jpg" alt="ARES MSR010 MS338">
+                    <h3>ARES MSR010 MS338 MÀU ĐEN</h3>
+                    <p>giá: 38.000.000 VNĐ</p>
+                    <a href="#" class="buy-btn">Mua ngay</a>
+                    <a href="#" class="button-btn">thêm vào giỏ hàng</a>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                 <img src="../images/ARES MSR010 MS338 MÀU TAN 38tr.jpg" alt="ARES MSR010 MS338 MÀU TAN">
+                 <h3>ARES MSR010 MS338 MÀU TAN</h3>
+                 <p>giá: 38.000.000 VNĐ</p>
+                 <a href="#" class="buy-btn">Mua ngay</a>
+                 <a href="#" class="button-btn">thêm vào giỏ hàng</a>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="../images/KJ WORKS KJW MK1 CARBINE 6MM 12tr.jpg" alt="KJ WORKS KJW MK1 CARBINE 6MM">
+                    <h3>KJ WORKS KJW MK1 CARBINE 6MM</h3>
+                    <p>giá: 12.000.000 VNĐ</p>
+                    <a href="#" class="buy-btn">Mua ngay</a>
+                    <a href="#" class="button-btn">thêm vào giỏ hàng</a>
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 Trò Chơi Airsoft. Bảo lưu mọi quyền.<br>
+        Địa chỉ: Số 8, Đường Trần Văn Ơn, Phường Phú Hòa, Thành Phố Thủ Dầu Một<br>
+        Email: lyhoanghung206@gmail.com
+    </footer>
+</body>
+</html>
