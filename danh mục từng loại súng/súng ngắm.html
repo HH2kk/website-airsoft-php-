@@ -76,6 +76,26 @@
         .button-btn:hover {
             background-color: #218838;
         }
+        .cart-count {
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 8px;
+            font-size: 14px;
+            position: relative;
+            top: -10px;
+            left: 5px;
+            transition: transform 0.2s ease;
+        }
+        .cart-count.bump {
+            transform: scale(1.4);
+        }
+
+        /* Hiệu ứng click */
+        .button-btn.clicked {
+            background-color: #28a745;
+            transform: scale(1.1);
+        }
     </style>
     <link rel="stylesheet" href="../css/hiệu ứng.css">
 </head>
@@ -101,7 +121,7 @@
         </div>
         <div class="user-icons">
             <div><i class="fas fa-user"></i>&#128100;<!-- Hình người đăng nhập--><a href="Đăng nhập.html">ĐĂNG NHẬP</a></div>
-            <div><i class="fas fa-shopping-cart"></i>&#128722;<!--Biểu tượng giỏ hàng--> <a href="#">Giỏ hàng</a><span class="cart-count">0</span></div>
+            <div><i class="fas fa-shopping-cart"></i>&#128722;<!--Biểu tượng giỏ hàng--> <a href="../html/giỏ hàng.html">Giỏ hàng</a><span class="cart-count">0</span></div>
         </div>
     </div>
     <!-- menu chính của trang  -->
@@ -168,5 +188,7 @@
         Địa chỉ: Số 8, Đường Trần Văn Ơn, Phường Phú Hòa, Thành Phố Thủ Dầu Một<br>
         Email: lyhoanghung206@gmail.com
     </footer>
+    <script src="../Javascript/thêm sản phẩm.js"></script>
+    <script src="../Javascript/điều chỉnh sản phẩm.js"></script>
 </body>
 </html>
